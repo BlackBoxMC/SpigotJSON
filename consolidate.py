@@ -10,7 +10,7 @@ for root, dirs, files in os.walk("./bin/Bukkit/target/site/apidocs/docs/"):
         if name.endswith((".json")):
             f = open(os.getcwd()+"/bin/Bukkit/target/site/apidocs/docs/"+name)
             j = json.loads("\n".join(f.readlines()))
-            spigot["spigot"].append(j)
+            spigot["org.bukkit"].append(j)
             f.close()
 
 f = open(os.getcwd()+"/spigot.json","w+")
