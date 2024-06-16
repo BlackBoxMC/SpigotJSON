@@ -1,1 +1,4 @@
 *.json
+bin/spigot*
+bin/*/
+spring-auto-restdocs-json-doclet-jdk9/target/
